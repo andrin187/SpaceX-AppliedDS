@@ -53,7 +53,7 @@ plt.show()
 - Success rate varies for each launch.
 - Success rate for Falcon 9 first stage landings deem to become prevelant as flight number increases.
 
-### TASK 2: Visualize the Eelationship Between Payload Mass and Launch Site
+### TASK 2: Visualize the Relationship Between Payload Mass and Launch Site
 ```python
 sns.catplot(x='PayloadMass', y='LaunchSite', hue='Class', data=df, aspect = 5)
 plt.xlabel('Payload Mass (kg)',fontsize=20)
