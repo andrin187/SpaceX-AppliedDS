@@ -11,6 +11,6 @@ In this project I want to answer the following questions:
 - Which machine learning model has the highest accuracy in predicting the outcome of a Falcon 9 first stage landing?
 - Will future landings be successful?
 
-## 📚Table of Contents
+***
 
 
