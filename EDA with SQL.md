@@ -1,5 +1,5 @@
 # 🚀 SpaceX-AppliedDS
-## Explanatory Data Analysis with SQL
+## Exploratory Data Analysis with SQL
 SQL queries written to derive questions on variables such as launch sites, payload masses, and dates.
 
 This assignment requires the following SpaceX CSV dataset: [SpaceX Dataset](https://cf-courses-data.s3.us.cloud-object-storage.appdomain.cloud/IBM-DS0321EN-SkillsNetwork/labs/module_2/data/Spacex.csv)
