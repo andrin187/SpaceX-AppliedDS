@@ -64,7 +64,7 @@ Display the total payload mass carried by boosters launched by NASA (CRS):
 
 <img width="156" alt="Screenshot 2025-01-31 at 7 41 29 PM" src="https://github.com/user-attachments/assets/bdff950f-9ea0-46d9-87bd-830696ffa2ce" />
 
-💡 The total payload carries by boosters launched by NASA is 45, 596 kg. 
+💡 The total payload carried by boosters launched by NASA is 45, 596 kg. 
 ***
 ### Task 4
 Display average payload mass carried by booster version F9 v1.1:
