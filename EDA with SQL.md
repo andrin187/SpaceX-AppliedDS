@@ -109,7 +109,7 @@ List the total number of successful and failure mission outcomes:
 ### Task 8
 List the names of the booster_versions which have carried the maximum payload mass. Use a subquery:
 ```python
-%sql select booster_version from SPACEXTBL where payload_mass__kg_ = (select max(payload_mass__kg_) from SPACEXTBL);
+%sql SELECT booster_version FROM SPACEXTBL WHERE payload_mass__kg_ = (select max(payload_mass__kg_) FROM SPACEXTBL);
 ```
 <img width="127" alt="Screenshot 2025-01-31 at 7 45 20 PM" src="https://github.com/user-attachments/assets/248189bf-fb85-405c-a95b-8b7740cca153" />
 
@@ -120,8 +120,8 @@ List the records which will display the month names, failure landing_outcomes in
 
 ❗SQLLite does not support monthnames. So you need to use substr(Date, 6,2) as month to get the months and substr(Date,0,5)='2015' for year.
 ```python
-%%sql select substr(Date, 6,2) as month, date, booster_version, launch_site, Landing_Outcome from SPACEXTBL
-      where Landing_Outcome = 'Failure (drone ship)' and substr(Date,0,5)='2015';
+%%sql SELECT substr(Date, 6,2) AS month, date, booster_version, launch_site, Landing_Outcome FROM SPACEXTBL
+      WHERE Landing_Outcome = 'Failure (drone ship)' AND substr(Date,0,5)='2015';
 ```
 <img width="497" alt="Screenshot 2025-01-31 at 7 46 11 PM" src="https://github.com/user-attachments/assets/7121147a-54d1-4e8a-ae9d-d08794a5aa34" />
 
@@ -130,10 +130,10 @@ List the records which will display the month names, failure landing_outcomes in
 ### Task 10
 Rank the count of landing outcomes (such as Failure (drone ship) or Success (ground pad)) between the date 2010-06-04 and 2017-03-20, in descending order:
 ```python
-%%sql select Landing_Outcome, count(*) as outcomes_rank from SPACEXTBL
-      where date between '2010-06-04' and '2017-03-20'
-      group by Landing_Outcome
-      order by outcomes_rank desc;
+%%sql SELECT Landing_Outcome, count(*) AS outcomes_rank FROM SPACEXTBL
+      WHERE date BETWEEN '2010-06-04' AND '2017-03-20'
+      GROUP BY Landing_Outcome
+      ORDER BY outcomes_rank desc;
 ```
 
 <img width="279" alt="Screenshot 2025-01-31 at 7 46 52 PM" src="https://github.com/user-attachments/assets/d45218b2-b123-4a05-a886-d4f5fe4452a2" />
