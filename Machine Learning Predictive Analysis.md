@@ -269,6 +269,9 @@ Find the method that performs best.
 - The small sample size can have an impact on same test scores.
 - Decision tree model best model based on the scores on the whole dataset due to having the highest accuracy.
 
+## Further Conclusions
+- SpaceX Falcon 9 landings have improved. As more launches are made the better the performance and greater the success.
+- Machine learning models can be used to predict future SpaceX Falcon 9 landings. 
 ***
 
 
